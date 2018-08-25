@@ -2,6 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/Kaja/Kaja.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Kaja/sandbox/Kaja.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/JavaMyKaja/JavaMyKaja.msd" folder="" />
     </projectModules>
   </component>
