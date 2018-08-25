@@ -31,5 +31,9 @@
       <node concept="1hRsYc" id="hpW6Plx5OF" role="1hQAy0" />
     </node>
   </node>
+  <node concept="1hQAyQ" id="hpW6Ply4sw">
+    <property role="TrG5h" value="Sample" />
+    <node concept="1hQAyd" id="hpW6Ply4sx" role="1hQAy7" />
+  </node>
 </model>
 
