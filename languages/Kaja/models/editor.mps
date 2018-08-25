@@ -115,18 +115,9 @@
       <node concept="2iRkQZ" id="hpW6Plx2dU" role="2czzBx" />
     </node>
   </node>
-  <node concept="24kQdi" id="hpW6Plx3ZN">
-    <ref role="1XX52x" to="vn0v:hpW6Plx3Zs" resolve="Step" />
-    <node concept="PMmxH" id="hpW6Plx3ZX" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <node concept="VechU" id="hpW6Plx7vw" role="3F10Kt">
-        <property role="Vb096" value="DARK_MAGENTA" />
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="hpW6Plx408">
-    <ref role="1XX52x" to="vn0v:hpW6Plx3Zx" resolve="TurnLeft" />
-    <node concept="PMmxH" id="hpW6Plx40e" role="2wV5jI">
+  <node concept="24kQdi" id="hpW6PlxaQd">
+    <ref role="1XX52x" to="vn0v:hpW6PlwTz_" resolve="Command" />
+    <node concept="PMmxH" id="hpW6PlxaQj" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <node concept="VechU" id="hpW6Plx7vs" role="3F10Kt">
         <property role="Vb096" value="DARK_MAGENTA" />
