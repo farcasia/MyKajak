@@ -12,6 +12,9 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -40,6 +43,7 @@
     <property role="EcuMT" value="313546001455749339" />
     <property role="TrG5h" value="Script" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="Script" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="hpW6PlwTzE" role="1TKVEi">
       <property role="IQ2ns" value="313546001455749354" />
@@ -55,6 +59,7 @@
   <node concept="1TIwiD" id="hpW6PlwTzw">
     <property role="EcuMT" value="313546001455749344" />
     <property role="TrG5h" value="CommandList" />
+    <property role="34LRSv" value="command list" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="hpW6PlwTzH" role="1TKVEi">
       <property role="IQ2ns" value="313546001455749357" />
@@ -67,7 +72,21 @@
   <node concept="1TIwiD" id="hpW6PlwTz_">
     <property role="EcuMT" value="313546001455749349" />
     <property role="TrG5h" value="Command" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="hpW6Plx3Zs">
+    <property role="EcuMT" value="313546001455792092" />
+    <property role="TrG5h" value="Step" />
+    <property role="34LRSv" value="step" />
+    <ref role="1TJDcQ" node="hpW6PlwTz_" resolve="Command" />
+  </node>
+  <node concept="1TIwiD" id="hpW6Plx3Zx">
+    <property role="EcuMT" value="313546001455792097" />
+    <property role="TrG5h" value="TurnLeft" />
+    <property role="34LRSv" value="turnLeft" />
+    <ref role="1TJDcQ" node="hpW6PlwTz_" resolve="Command" />
   </node>
 </model>
 

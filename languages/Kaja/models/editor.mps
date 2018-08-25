@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="vn0v" ref="r:6c4fe7db-81bd-4c1e-9740-e8768d7510fc(Kaja.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -24,7 +25,13 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -56,8 +63,8 @@
       <node concept="2iRkQZ" id="hpW6PlwWqq" role="2iSdaV" />
       <node concept="3EZMnI" id="hpW6PlwWqG" role="3EZMnx">
         <node concept="2iRfu4" id="hpW6PlwWqH" role="2iSdaV" />
-        <node concept="3F0ifn" id="hpW6PlwWqM" role="3EZMnx">
-          <property role="3F0ifm" value="Script" />
+        <node concept="PMmxH" id="hpW6Plx3ZA" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         </node>
         <node concept="3F0A7n" id="hpW6PlwWr0" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -101,18 +108,29 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="hpW6PlwZ3T">
-    <ref role="1XX52x" to="vn0v:hpW6PlwTz_" resolve="Command" />
-    <node concept="3F0ifn" id="hpW6PlwZ3Z" role="2wV5jI">
-      <property role="3F0ifm" value="-to-be-specified-command" />
-      <node concept="Vb9p2" id="hpW6PlwZ43" role="3F10Kt" />
-    </node>
-  </node>
   <node concept="24kQdi" id="hpW6PlwZ4e">
     <ref role="1XX52x" to="vn0v:hpW6PlwTzw" resolve="CommandList" />
     <node concept="3F2HdR" id="hpW6Plx2dS" role="2wV5jI">
       <ref role="1NtTu8" to="vn0v:hpW6PlwTzH" resolve="commands" />
       <node concept="2iRkQZ" id="hpW6Plx2dU" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="hpW6Plx3ZN">
+    <ref role="1XX52x" to="vn0v:hpW6Plx3Zs" resolve="Step" />
+    <node concept="PMmxH" id="hpW6Plx3ZX" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="VechU" id="hpW6Plx7vw" role="3F10Kt">
+        <property role="Vb096" value="DARK_MAGENTA" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="hpW6Plx408">
+    <ref role="1XX52x" to="vn0v:hpW6Plx3Zx" resolve="TurnLeft" />
+    <node concept="PMmxH" id="hpW6Plx40e" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="VechU" id="hpW6Plx7vs" role="3F10Kt">
+        <property role="Vb096" value="DARK_MAGENTA" />
+      </node>
     </node>
   </node>
 </model>

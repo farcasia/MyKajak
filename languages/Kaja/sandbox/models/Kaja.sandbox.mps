@@ -13,20 +13,22 @@
       </concept>
     </language>
     <language id="4b74957e-fe6b-412d-979d-fa265e551aa5" name="Kaja">
-      <concept id="313546001455749349" name="Kaja.structure.Command" flags="ng" index="1hQAy8" />
       <concept id="313546001455749344" name="Kaja.structure.CommandList" flags="ng" index="1hQAyd">
         <child id="313546001455749357" name="commands" index="1hQAy0" />
       </concept>
       <concept id="313546001455749339" name="Kaja.structure.Script" flags="ng" index="1hQAyQ">
         <child id="313546001455749354" name="commandList" index="1hQAy7" />
       </concept>
+      <concept id="313546001455792097" name="Kaja.structure.TurnLeft" flags="ng" index="1hRsYc" />
+      <concept id="313546001455792092" name="Kaja.structure.Step" flags="ng" index="1hRsYL" />
     </language>
   </registry>
   <node concept="1hQAyQ" id="hpW6PlwVRF">
     <property role="TrG5h" value="Sample" />
     <node concept="1hQAyd" id="hpW6PlwVRG" role="1hQAy7">
-      <node concept="1hQAy8" id="hpW6PlwVRL" role="1hQAy0" />
-      <node concept="1hQAy8" id="hpW6PlwVRO" role="1hQAy0" />
+      <node concept="1hRsYL" id="hpW6Plx5Oz" role="1hQAy0" />
+      <node concept="1hRsYL" id="hpW6Plx9a2" role="1hQAy0" />
+      <node concept="1hRsYc" id="hpW6Plx5OF" role="1hQAy0" />
     </node>
   </node>
 </model>
